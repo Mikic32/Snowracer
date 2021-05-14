@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <script type="text/javascript" src="datetimepicker/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="datetimepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+                $("#hamburger").click(function(){
+                    $(".responsive").toggle(300);
+                })
+            });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div class='container'>
+                <div class='resp-overflow'>
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class='logo'/></a>
+                    <button id='hamburger'><span class='glyphicon glyphicon-menu-hamburger'></span></button>
+                </div>    
+                <ul class='responsive'>
+                    <li><a href="#" class="expand">COVER LEVELS</a></li>
+                    <li><a href="#">POLICY WORDING</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">MAKE A CLAIM</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="purchase">
+        <div class='container'>
+            <div class='col-md-9 title-purchase'>
+                <h1>Let's Go! You're Now Covered.</h1>
+                <h4>We've emailed your important policy details to: bob@bobmail.com</h4>
+            </div>
+            <div class='col-md-3'>
+                <div class='policy-details'>
+                    <div class='important'>
+                        Your Important Policy Details
+                    </div>
+                    <ul>
+                        <li>Your policy Number: <span class='darkblueletter font-bigger'>SR-AU-1234</span></li>
+                        <li>Plan: <span class='darkblueletter'>Season Pass</span></li>
+                        <li>When: <span class='darkblueletter'>17.07.2017 - 17.11.2017</span></li>
+                        <li>Who: <span class='darkblueletter'>2 Travellers</span></li>
+                        <li>Excess: <span class='darkblueletter'>$100</span></li>
+                    </ul>
+                    <div class="col-md-12 total-premium">
+                        <h4>Total premium</h4>
+                        <div class='pricebox'>
+                            <h1>$ 80.00</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-12 total-premium">
+                        <h4>Are your details correct? <span class='glyphicon glyphicon-info-sign'></span></h4>
+                            <button class="btn btn-primary btn-block">Policy Wording</button>
+                            <button class="btn btn-primary btn-block">Certificate of Cover</button>
+                        <div class='linksite'>
+                            <a href="#">snowracer.com.au</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+    <footer>
+        <div class='container'>
+            <div class='col-md-9'>
+                 <p>Snowracer is a registered trademark of snowracer Pty Ltd. snowracer Pty Ltd. AIBN 91 105 954 265, is an authorised representative of Coffre-Fort Pty Limited ABN<br/>66 125 358 518, AFS Licence No. 472457. This is general advice and you should consider if this product suits your needs. Before you buy, please read the Product<br/>Disclosure Statement. This insurance is underwritten by certain underwritters at Lloyd's, Snowracer is located on Level 11, 307 Pitt Street, Sydney.<br/>NSW 2000 Australia.</p>
+            </div>
+            <div class='col-md-3'>
+                <h3>Coverholder at <span><img src="images/icons/lloyds.png" alt=''></span></h3>
+            </div> 
+        </div>
+    </footer>
+    <script>
+    $('#datepicker').datepicker({
+       orientation: 'bottom'
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <script type="text/javascript" src="datetimepicker/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="datetimepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+                $("#hamburger").click(function(){
+                    $(".responsive").toggle(300);
+                })
+            });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div class='container'>
+                <div class='resp-overflow'>
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class='logo'/></a>
+                    <button id='hamburger'><span class='glyphicon glyphicon-menu-hamburger'></span></button>
+                </div>    
+                <ul class='responsive'>
+                    <li><a href="#" class="expand">COVER LEVELS</a></li>
+                    <li><a href="#">POLICY WORDING</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">MAKE A CLAIM</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="cover">
+        <div class='container cover'>
+            <h1>GET A QUOTE</h1>
+            <form class="form-inline" action="" method="">
+               <div class="input-group div-all">
+                   <input type="number" class="age" placeholder="Age of travellers"/>
+                   <div class="input-daterange input-group" id="datepicker">
+                        <span class="input-group-addon"><span class='glyphicon glyphicon-calendar'></span></span>
+                        <input type="text" class="form-control date" name="start" placeholder='Depart date'/>
+                        <span class="input-group-addon">
+                            <img src="images/icons/arrow-right.png" alt="arrowright"/>
+                        </span>
+                        <input type="text" class="form-control date" name="end" placeholder='Return date'/>
+                    </div>
+                   <button type="number" class="btn btn-warning">Get A Quote</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="sixpack">
+        <div class='col-md-12'>
+            <h2>WHY CHOOSE SNOWRACER GOLD</h2>
+        </div>
+        <div class='container'>
+            <div class='col-md-4'>
+                <img src="images/icons/mailicon.png" alt=""/>
+                <h4>EXCLUSIVE<br/>SEASON PASS</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+            <div class='col-md-4'>
+                <img src="images/icons/helicotpericon.png" alt=""/>
+                <h4>UNLIMITED EMERGENCY<br/>RESCUE COVER</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+            <div class='col-md-4'>
+                <img src="images/icons/shoesicon.png" alt=""/>
+                <h4>REPLACEMENT<br/>SKI GEAR</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+        </div>
+        <div class='container'>
+            <div class='col-md-4'>
+                <img src="images/icons/texticon.png" alt=""/>
+                <h4>UNLIMITED CANCELATION<br/>COVER</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+            <div class='col-md-4'>
+                <img src="images/icons/skiicon.png" alt=""/>
+                <h4>SHOW EQUIPMENT<br/>HIRE EXCESS</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+            <div class='col-md-4'>
+                <img src="images/icons/driveicon.png" alt=""/>
+                <h4>PISTE<br/>CLOSURE COVER</h4>
+                <p>Get covered for the entire domestic snow season for an unlimited number or trips to any snowfield in Australia</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class='container'>
+            <div class='col-md-9'>
+                 <p>Snowracer is a registered trademark of snowracer Pty Ltd. snowracer Pty Ltd. AIBN 91 105 954 265, is an authorised representative of Coffre-Fort Pty Limited ABN<br/>66 125 358 518, AFS Licence No. 472457. This is general advice and you should consider if this product suits your needs. Before you buy, please read the Product<br/>Disclosure Statement. This insurance is underwritten by certain underwritters at Lloyd's, Snowracer is located on Level 11, 307 Pitt Street, Sydney.<br/>NSW 2000 Australia.</p>
+            </div>
+            <div class='col-md-3'>
+                <h3>Coverholder at <span><img src="images/icons/lloyds.png" alt=''></span></h3>
+            </div> 
+        </div>
+    </footer>
+    <script>
+    $('#datepicker').datepicker({
+       orientation: 'bottom'
+    });
+    </script>
+</body>
+</html>

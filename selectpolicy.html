@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <script type="text/javascript" src="datetimepicker/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="datetimepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+                $("#hamburger").click(function(){
+                    $(".responsive").toggle(300);
+                })
+            });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div class='container'>
+                <div class='resp-overflow'>
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class='logo'/></a>
+                    <button id='hamburger'><span class='glyphicon glyphicon-menu-hamburger'></span></button>
+                </div>    
+                <ul class='responsive'>
+                    <li><a href="#" class="expand">COVER LEVELS</a></li>
+                    <li><a href="#">POLICY WORDING</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">MAKE A CLAIM</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="topform-selectpolicy">
+        <div class='container cover'>
+             <form class="form-inline" action="" method="">
+               <div class="input-group div-all">
+                   <input type="number" class="age" placeholder="Age of travellers"/>
+                   <div class="input-daterange input-group" id="datepicker">
+                        <span class="input-group-addon"><span class='glyphicon glyphicon-calendar'></span></span>
+                        <input type="text" class="form-control date" name="start" placeholder='Depart date'/>
+                        <span class="input-group-addon">
+                            <img src="images/icons/arrow-right.png" alt="arrowright"/>
+                        </span>
+                        <input type="text" class="form-control date" name="end" placeholder='Return date'/>
+                    </div>
+                   <button type="number" class="btn btn-warning">Get A Quote</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="policy-choises">
+        <div class='container'>
+            <div class='col-md-3'>
+                <div class='four-box'>
+                    <div class="transparentbox">
+                        <h1>SELECT YOUR<br/>POLICY</h1>
+                        <button class="emailbtn">Email Quote</button>
+                        <div class="downtext">Expand to see benefits in detail <span class="glyphicon glyphicon-menu-down"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-3'>
+                <div class='four-box gray'>
+                    <div class='fourb-title'>
+                        <h3>SNOWRACER*</h3>
+                    </div>
+                    
+                    <h4>June 15, 2017-</h4>
+                    <h4>Sep 30, 2017</h4><br/><br/>
+                    <h3>Included with<br/>
+                        SSA membership
+                    </h3>
+                </div>
+            </div>
+            <div class='col-md-3'>
+                <div class='four-box lightblue'>
+                     <div class='fourb-title'>
+                         <h3>SNOWRACER GOLD<br/>SINGLE TRIP</h3><br/>
+                    </div>
+                    <h4>July 17, 2017-</h4>
+                    <h4>July 20, 2017</h4>
+                     <h2>$40.00</h2>
+                    <button class='btn darkblue'>SELECT</button>
+                </div>
+            </div>
+            <div class='col-md-3'>
+                 <div class='four-box darkblue'>
+                    <div class='fourb-title'>
+                         <h3>SNOWRACER GOLD<br/>SEASON PASS</h3><br/>
+                    </div>
+                    <h4>June 15, 2017-</h4>
+                    <h4>Sep 30, 2017</h4>
+                     <h2>$80.00</h2>
+                    <button class='btn yellow'>BUY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="packets-include">
+        <div class='container'>
+            <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-down"></span>COVER FOR LEISURE SNOW SPORTS</h4></div>
+                <div class="col-md-3"><p><span class="glyphicon glyphicon-remove"></span></p></div>
+                <div class="col-md-3"><p><span class="glyphicon glyphicon-ok"></span></p></div>
+                <div class="col-md-3"><p><span class="glyphicon glyphicon-ok"></span></p></div>
+            </div>
+            <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-down"></span>MEDICAL</h4></div>
+                <div class="col-md-3"><p>$0</p></div>
+                <div class="col-md-3"><p>$50,000</p></div>
+                <div class="col-md-3"><p class="bold">$50,000</p></div>
+            </div>
+            <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-down"></span>LUGGAGE</h4></div>
+                <div class="col-md-3"><p>$0</p></div>
+                <div class="col-md-3"><p>$5,000</p></div>
+                <div class="col-md-3"><p class="bold">$5,000</p></div>
+            </div>
+             <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-down"></span>CANCELLATION</h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>Unlimited</p></div>
+                <div class="col-md-3"><p class="bold">Unlimited</p></div>
+            </div>
+             <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-down"></span>ANCILLARY</h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>$1 Million</p></div>
+                <div class="col-md-3"><p class="bold">$1 Million</p></div>
+            </div>
+           
+                <div class='col-md-12 skispecific whitebackborder'>
+                     <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>PERSONAL LIABILITY</span></h4></div>
+                    <div class="col-md-3"><p>$0</p></div>
+                      <div class="col-md-3"><p>$1 Million</p></div>
+                    <div class="col-md-3"><p class="bold">$1 Million</p></div>
+                </div>
+                 <div class='col-md-12 skispecific whiteback'>
+                    <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>RENTAL VEHICLE EXCESS</span></h4></div>
+                    <div class="col-md-3"><p>$500^</p></div>
+                    <div class="col-md-3"><p>$5,000</p></div>
+                    <div class="col-md-3"><p class="bold">$5,000</p></div>
+                </div>
+            
+            <div class='col-md-12'>
+                <div class="col-md-3 left"><h4><span class="glyphicon glyphicon-menu-up" id='arrow'></span>SKI SPECIFIC</h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>Unlimited</p></div>
+                <div class="col-md-3"><p class="bold">Unlimited</p></div>
+            </div>
+            
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>EMERGENCY RESCUE</span></h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>Unlimited</p></div>
+                <div class="col-md-3"><p class="bold">Unlimited</p></div>
+            </div>
+             <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>OWN SNOW GEAR</span></h4></div>
+                <div class="col-md-3"><p>$0</p></div>
+                <div class="col-md-3"><p>$1,250</p></div>
+                <div class="col-md-3"><p class="bold">$1,250</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>ALTERNATIVE SKI HIRE</span></h4></div>
+                <div class="col-md-3"><p>$0</p></div>
+                <div class="col-md-3"><p>$1,250</p></div>
+                <div class="col-md-3"><p class="bold">$1,250</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>PRE PAID EXPENSES</span></h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>$750</p></div>
+                <div class="col-md-3"><p class="bold">$750</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>LIFT PASS(LOSS OR THEFT)</span></h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>$750</p></div>
+                <div class="col-md-3"><p class="bold">$750</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>HIRE SNOW EQUIPMENT</span></h4></div>
+                <div class="col-md-3"><p>$0</p></div>
+                <div class="col-md-3"><p>$750</p></div>
+                <div class="col-md-3"><p class="bold">$750</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>PISTE CLOSURE</span></h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+                <div class="col-md-3"><p>$1,000</p></div>
+                <div class="col-md-3"><p class="bold">$1,000</p></div>
+            </div>
+            <div class='col-md-12 whitebackborder'>
+                <div class="col-md-3 left"><h4><span class="whitespace"></span><span class='font-light'>BAD WEATHER &#38;<br/><span class="whitespace"></span>AVALANCHE CLOSURE</span></h4></div>
+                <div class="col-md-3"><p>$500</p></div>
+               <div class="col-md-3"><p>$1,000</p></div>
+                <div class="col-md-3"><p class="bold">$1,000</p></div>
+            </div>
+            <div class="col-md-12 whitebackborder attention">
+                *For full policy details click here. A cumulative maximum of $500 claimable once per person.<br/>
+                *Repatriation of vehicle
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class='container'>
+            <div class='col-md-9'>
+                 <p>Snowracer is a registered trademark of snowracer Pty Ltd. snowracer Pty Ltd. AIBN 91 105 954 265, is an authorised representative of Coffre-Fort Pty Limited ABN<br/>66 125 358 518, AFS Licence No. 472457. This is general advice and you should consider if this product suits your needs. Before you buy, please read the Product<br/>Disclosure Statement. This insurance is underwritten by certain underwritters at Lloyd's, Snowracer is located on Level 11, 307 Pitt Street, Sydney.<br/>NSW 2000 Australia.</p>
+            </div>
+            <div class='col-md-3'>
+                <h3>Coverholder at <span><img src="images/icons/lloyds.png" alt=''></span></h3>
+            </div> 
+        </div>
+    </footer>
+    <script>
+    $('#datepicker').datepicker({
+       orientation: 'bottom'
+    });
+        $(document).ready(function(){
+        $("#arrow").click(function(){
+            $(".skispecific").toggle(250);
+            $(this).toggleClass('rotated');
+        });
+    });
+    </script>
+</body>
+</html>
